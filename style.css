@@ -1,0 +1,721 @@
+:root {
+    --color-default: #ff9301;
+    --color-nadpisy: #0b0b15;
+    --color-text: #555555;
+    --color-ramecky-form: #bbbbbb;
+    --color-oddelovace: #eeeeee;
+    --color-pozadi: #f7f7ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+header {
+    margin: 2rem 4vw 1rem;
+}
+
+p {
+    line-height: 1.5;
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+.intro  {
+    
+}
+
+.heading {
+    
+}
+
+.header-des {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.heading__prolog {
+    font-weight: 500;
+
+}
+
+.heading__me__name {
+    font-size: 4.9em;
+    font-weight: 900;
+    margin: 0;
+}
+
+.heading__me__job {
+    font-size: 2em;
+    font-weight: 900;
+    color:  var(--color-default);
+    margin: 0 0 1rem;
+}
+
+.navigation__list {
+    padding-left: 0;
+}
+
+.seskupeni {
+    background-color: var(--color-pozadi);
+    padding: 2rem 4vw 1rem;
+}
+
+
+.profile__des__name {
+    font-weight: 900;
+    font-size: 2em;
+    color: var(--color-nadpisy);
+    margin-bottom: 0;
+}
+
+.profile__des__job {
+    color: var(--color-default);
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 0.3rem;
+}
+
+.line {
+    background-image: url(/images/border-dark.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    border: none;
+    height: 5px;
+    margin-top: 2rem;
+}
+
+.nadpis {
+    position: relative;
+    z-index: 100;
+}
+
+.nadpis > h2, .nadpis > h3 {
+    position: relative;
+    z-index: 300;
+}
+
+.nadpis__decor {
+    border-radius: 50%;
+    background-color: var(--color-default);
+    width: 2.2rem;
+    height: 2.2rem;
+    opacity: 50%;
+    display: flex;
+    position: absolute;
+    z-index: 200;
+    top: -5px;
+    left: -10px;
+}
+
+
+.what-i-do__articles__card {
+    background-color: white;
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.what-i-do__articles__card__icon {
+    background-color: var(--color-default);
+    border-radius: 50%;
+    display: flex;
+ 
+    width: 20%;
+    padding: 4rem;
+    position: absolute;
+    left: -30px;
+    top: -75px;
+    
+}
+
+.what-i-do__articles__card__icon > svg {
+   position: relative;
+   left: 5px;
+   top: 35px;
+}
+
+.what-i-do {
+    
+}
+
+.what-i-do__articles {
+    display: flex;
+}
+
+.what-i-do__articles__heading {
+    font-weight: 900;
+}
+
+.what-i-do__articles__card__text {
+   padding: 9rem 1.5rem 1rem;
+}
+
+.awards__card {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.awards__heading, .what-i-do__heading, .experience__heading, .contact__heading {
+    
+    font-weight: 900;
+}
+
+.portfolio__heading {
+    
+}
+
+.awards {
+    
+}
+
+.awards__card__des {
+   margin-left: 1rem;
+}
+
+.experience, .portfolio, .contact {
+    padding: 1rem 4vw 1rem;
+}
+
+.experience__card {
+    background-color: var(--color-pozadi);
+    border-radius: 1em;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience__card__des__working {
+    background-color: var(--color-default);
+    max-width: fit-content;
+    border-radius: 0.3em;
+    color: white;
+    padding: 0.3rem 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.experience__card__des__working--part-time {
+    background-color: var(--color-text);
+}
+
+.experience__card__heading {
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.experience__card__des span {
+    display: block;
+}
+
+.experience__card__text {
+    margin-bottom: 0;
+}
+
+.intro {
+    text-align: center;
+}
+
+.biography__text {
+    text-align: left;
+    border: 1px wave black;
+}
+
+.portfolio__grid__card__text {
+    
+}
+
+.portfolio__grid__card__text__heading {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.portfolio__grid__card__text__sub {
+    font-weight: 400;
+    margin-top: 0.2rem;
+}
+
+.portfolio__grid__card__parag {
+    font-weight: 500;
+}
+
+.portfolio__grid__card {
+    margin-bottom: 2rem;
+}
+
+
+
+.contacting__item {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.contacting__adress__text, .contacting__mail__text, .contacting__mobile__text {
+    color: var(--color-nadpisy);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.contacting__adress {
+    margin-top: 1.5rem;
+}
+
+.contacting__adress__state {
+    display: block;
+}
+
+.mobile-icon {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos > * {
+    
+    color: var(--color-nadpisy);
+}
+
+.logos > *:hover {
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.intro {
+    background-color: var(--color-pozadi);
+    max-width: 100%;
+    
+}
+
+.contact {
+    background-color: var(--color-pozadi);
+    
+}
+
+.contact-layout {
+   margin-top: 2rem;
+}
+
+.contact-layout__adress__heading {
+  
+    font-weight: 900;
+}
+
+.form__heading {
+    font-weight: 900;
+   
+}
+
+.form__inputs__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: var(--color-text);
+}
+
+input, textarea {
+    border: 1px solid var(--color-ramecky-form);
+}
+
+.form__inputs__button {
+   border-radius: 0.3em;
+   background-color: black;
+   border: none;
+   color: var(--color-pozadi);
+   font-weight: 600;
+   padding: 0.7rem 0.8rem;
+   margin: 1rem 0;
+}
+
+.form__inputs__button {
+    max-width: fit-content;
+  
+    
+}
+
+.form-layout__item {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.form__inputs__name {
+    margin-top: 0;
+}
+
+.form__inputs__text {
+    margin-bottom: 0;
+}
+.map {
+    width: 100%;
+    height: 16em;
+    filter: grayscale(100%);
+}
+
+.form {
+    margin-top: 3rem;
+}
+
+.twitter-logo, .facebook-logo {
+    margin: 0 0.5rem
+}
+
+.end {
+    margin-bottom: 0.4rem;
+}
+
+/*  SMALL DEVICE  */
+@media (max-width: 559px) {
+    .navigation__list {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: stretch;
+        gap: 1em;
+       
+    }
+
+    .navigation__list__item {
+        list-style: none;
+        border-radius: 0.3rem;
+        background-color: var(--color-default);
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0.8rem 0.9rem;
+    }
+
+    .navigation__list__item:hover {
+        cursor: pointer;
+    }
+
+    .navigation__list__item > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .profile__avatar {
+        
+    }
+
+    .profile__avatar__img {
+        border-radius: 50%;
+        background-color: var(--color-default);
+        width: 50%;
+    }
+
+   
+
+    .biography {
+     
+    }
+
+    .biography__heading {
+        text-align: left;
+        color: var(--color-nadpisy);
+        font-size: 1.5em;
+        font-weight: 900;
+      
+    }
+
+    .biography__text {
+        font-weight: 500;
+    }
+
+    .what-i-do__articles {
+        flex-wrap: wrap;
+    }
+
+    .what-i-do {
+     
+    }
+
+
+   .portfolio__grid__card {
+    display: block;
+   }
+
+   .portfolio__grid__img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+   }
+
+   .awards__card {
+    display: flex;
+    align-items: center;
+
+   }
+
+   
+  
+
+   .form-layout__item {
+    display: grid;
+    color: var(--color-text);
+   }
+
+   textarea {
+    resize: vertical;
+   }
+
+   .form-layout {
+    display: flex;
+    flex-wrap: wrap;
+
+    
+   }
+
+   .logos {
+
+   }
+   
+   .end {
+    text-align: center;
+ 
+   }
+
+   
+
+}
+
+/*  MEDIUM DEVICE  */
+@media (min-width: 560px) {
+
+    .navigation__list {
+        display: flex;
+    
+    }
+
+    .navigation__list__item {
+        
+  
+    }
+
+    .navigation__list__item > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .what-i-do__articles {
+        flex-wrap: wrap;
+    }
+
+    .what-i-do {
+    
+    }
+
+    .portfolio__grid {
+        background-color: red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       }
+
+    .portfolio__grid article {
+ 
+    }
+
+    .portfolio__grid__img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .awards__cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .awards__card {
+   
+      
+        width: 20%;
+    }
+
+    .trophy, .awards__card__des {
+        text-align: center;
+    }
+
+    .awards__card__des {
+
+    }
+
+    .experience__card {
+        display: flex;
+   
+   
+        border: 1px solid black;
+    }
+
+    .experience__card__des {
+    
+        align-self: center;
+    }
+
+    
+    .experience__card__des__working {
+        width: max-content;
+    }
+   
+    .form-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "name email"
+        "subject subject"
+        "text text";
+    }
+
+    .form-layout__item {
+        padding: 5rem;
+    }
+
+    .form__inputs__name {
+        grid-area: name;
+    }
+
+    .form__inputs__email {
+        grid-area: email;
+    }
+
+    .form__inputs__subject {
+        grid-area: subject;
+    }
+
+    .form__inputs__text {
+        grid-area: text;
+    }
+
+    .form__inputs {
+      
+    }
+
+    .form-layout > * {
+    
+    }
+
+    .form__inputs__button {
+        
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/*  LARGE DEVICE  */
+@media (min-width: 960px) {
+
+    .intro {
+   
+        display: flex;
+    }
+
+    
+   
+    .biography {
+
+    }
+
+    .what-i-do {
+ 
+    }
+    .what-i-do__articles {
+        flex-wrap: nowrap;
+    }
+   
+
+    .portfolio__grid {
+        background-color: yellowgreen;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .awards__card {
+       width: 25%;
+    }
+
+    .experience__card__des > span {
+        width: max-content;
+    }
+
+    .contact-layout {
+        display: flex;
+
+        align-items: center;
+    }
+
+    .contact-layout__adress, .form {
+        max-width: 50vw;
+    }
+
+    .form__nadpis {
+    
+
+    }
+}
+
+/*  EXTRA LARGE DEVICE  */
+@media (min-width: 1200px) {
+
+    .intro {
+      
+    }
+
+
+    .navigation {
+   
+    }
+
+    .what-i-do {
+
+
+    }
+    .what-i-do__articles {
+        flex-wrap: nowrap;
+    }
+    
+    .portfolio__grid {
+        background-color: hotpink;
+   
+    }
+
+    .awards__card {
+        width: auto;
+     
+    }
+
+    .awards__cards {
+      
+    
+    }
+
+    .experience {
+      
+    }
+
+    .contact {
+      
+    }
+}
+
+
